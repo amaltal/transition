@@ -1,11 +1,11 @@
-- title: Introduction
+- title: Reintegration Spaces for released hostages
   center: [-74.0060, 40.7128]
   zoom: 10
   pitch: 0
   bearing: 0
   description: Welcome to the map scrollytelling app. You can set position, zoom, pitch, and bearing via the top-level props.
 
-- title: Section Title - Squirrels in Central Park
+- title: Belong
   center: [-73.96778, 40.78376]
   zoom: 14
   pitch: 0
@@ -29,7 +29,7 @@
       circle-color: '#826260'
       circle-opacity: 0.8
 
-- title: Polygon Layer
+- title: Helplessness
   # center: [-73.96778, 40.78376]
   center: [-74.00739, 40.67930]
   zoom: 14
@@ -49,7 +49,35 @@
 
 
 
-- title: London
+- title: Autonomy
+  center: [-0.1278, 51.5074]
+  zoom: 8
+  pitch: 30
+  bearing: -10
+  description: You can change the position of the overlay div using the position attribute, and can add images using the media attribute.
+  media: https://img.atlasobscura.com/OGZXBPY6hP2AXBi-M97MjAYHr46wOlG4iPA1pz2owEI/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85NTI3/NzEyMWY1NWM5ZWIx/ZDRfMTM3ODE0MjA1/OTNfMjQ0ZmUxZDJj/OV9rLmpwZw.jpg
+  position: right
+
+- title: Guilt
+  center: [-0.1278, 51.5074]
+  zoom: 8
+  pitch: 30
+  bearing: -10
+  description: You can change the position of the overlay div using the position attribute, and can add images using the media attribute.
+  media: https://img.atlasobscura.com/OGZXBPY6hP2AXBi-M97MjAYHr46wOlG4iPA1pz2owEI/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85NTI3/NzEyMWY1NWM5ZWIx/ZDRfMTM3ODE0MjA1/OTNfMjQ0ZmUxZDJj/OV9rLmpwZw.jpg
+  position: right  
+
+
+- title: Isolation
+  center: [-0.1278, 51.5074]
+  zoom: 8
+  pitch: 30
+  bearing: -10
+  description: You can change the position of the overlay div using the position attribute, and can add images using the media attribute.
+  media: https://img.atlasobscura.com/OGZXBPY6hP2AXBi-M97MjAYHr46wOlG4iPA1pz2owEI/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85NTI3/NzEyMWY1NWM5ZWIx/ZDRfMTM3ODE0MjA1/OTNfMjQ0ZmUxZDJj/OV9rLmpwZw.jpg
+  position: right
+
+- title: Power
   center: [-0.1278, 51.5074]
   zoom: 8
   pitch: 30

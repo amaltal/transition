@@ -2,9 +2,9 @@ blocks:
   - type: "content"
     content:
       - h1:
-        - str: "Example page with inline maps from a yaml file"
+        - str: "Taken from the beginning stages of my research, these were the six words that stood out as being characteristic of people who has been held captive."
       - p: 
-        - str: "An example of an interactive map"
+        - str: "Belong"
 
   - type: "map"
     content:
@@ -57,41 +57,103 @@ blocks:
 
   - type: "content"
     content:
+      - h2: 
+        - str: "Guilt"
       - p: 
-        - str: "... and below is a static map. Note that the container ID must be unique (in the example below it is maplibremap2)."
-
-  - type: "map"
-    content:
-      container: "maplibremap2"
-      latitude: 32.795595
-      longitude: -117.259191
-      zoom: 3
-      interactive: false
-      mapstyle: "https://demotiles.maplibre.org/style.json"
-      containerstyle: "width: 100%; height: 256px"
-
-  - type: "content"
-    content:
-      - p: 
-        - str: "... and a static map from an image you have composed." 
-      - p: 
-        - str: "To add static images from a jpg or png file save the image in the public/img folder and use the syntax below"
+        - str: "Guilt settles in, often emerging in ways she doesn’t expect. It is not just about surviving—it is
+about the memory of why and how.
+The uniqueness of Survivor’s Guilt comes as she grapples with why she was freed while others
+remained captive or perished. Memories of actions she took—or didn’t —while in captivity,
+whether cooperating with captors, failing to resist, or feeling embarrassed, become painful
+shards. This guilt extends into reintegration, as she struggles to reconcile her freedom with the
+suffering of others and question her worthiness of survival. It can also be compounded by the
+reactions of family or media, who may impose expectations of resilience or heroism that feel at
+odds with the survivor’s internal reality." 
       - img:
-        - src: "./img/fisk02.jpg"
+        - src: "./img/guilt.jpg"
           alt: "image description"
 
   - type: "content"
     content:
       - h2: 
-        - str: "A subsection"
+        - str: "Helplessness"
       - p: 
-        - str: "You can go into more detail here."
-      - p: 
-        - str: "To start a new paragraph you must insert a new p section as shown here. "
+        - str: "She was once a part of an unspoken whole, now she is disconnected.
+Captivity enforces a state of absolute helplessness—where every decision, every movement, is
+dictated by external forces. Over time, the mind adapts, learning that resistance is futile, that
+survival depends on submission. This drived someone away from what they knew. When
+freedom comes, asking for help must not be construed as helplessness. She may struggle to
+believe she has control over her own safety, remaining hyper-vigilant, or deferring to others
+even when she no longer has to. Reintegration requires unlearning captivity. Rebuilding
+confidence in personal agency is slow, often painful, and complicated by a world that may not
+understand the depth of her internalized need for help."
+      - img:
+        - src: "./img/helplessness.jpg"
+        - alt: "image description"
 
   - type: "content"
     content:
-      - h3: 
-        - str: "A further subsection"
+      - h2: 
+        - str: "Isolation"
       - p: 
-        - str: "And even more detail here."
+        - str: "How can she explain what it felt like? How can she make them understand?
+Words feel insufficient, and well-meaning attempts at support often feel misplaced, filled with
+reassurances that fail to touch the depth of this experience.The media, drawn to stories of
+survival, offers a stage—but also a void. Both seen and unseen, heard and unheard, placed
+before an audience that listens but does not always understand. Reintegration is not just about
+returning—it is about reconnecting. Overcoming isolation means finding spaces where she can
+exist without performance, where her trauma does not need to be simplified, where she is
+understood not for what she endured, but for who she is now."
+      - img:
+        - src: "./img/isolation.jpg"
+        - alt: "image description"
+
+  - type: "content"
+    content:
+      - h2: 
+        - str: "Autonomy"
+      - p: 
+        - str: "Her ability to make choices again is not just about survival, it’s about living.
+Autonomy is one of the most important emotions that must be fostered during reintegration.
+The transition from having every aspect of life dictated—movement, speech, even bodily
+functions—to making independent choices again can be disorienting. The process of
+reclaiming autonomy is fraught with tension, as she navigates a world that may still feel
+restrictive, unfamiliar, or indifferent to the profound loss of control she endured, but autonomy
+is also freedom rediscovered."
+      - img:
+        - src: "./img/autonomy.jpg"
+        - alt: "image description"
+
+  - type: "content"
+    content:
+      - h2: 
+        - str: "Belong"
+      - p: 
+        - str: "Who was she before? Who is she now? The world she returns to is familiar, yet she moves
+through it as a stranger—disconnected from the person she once was, uncertain of the person
+she has become.
+Identity is at the core of what it means to belong, yet captivity fractures that foundation. The
+sense of self is not just wounded—it is reshaped. In captivity, survival required adaptation. Now,
+in freedom, the expectations placed upon her often do not align with the internal reality of
+what she has endured. Reintegration is not just about finding a place in the world again—it is
+about redefining that place on her own terms. It means learning how to bridge the past and the
+present, how to rebuild connections without erasing what she has survived.."
+      - img:
+        - src: "./img/belong.jpg"
+        - alt: "image description"
+
+  - type: "content"
+    content:
+      - h2: 
+        - str: "Power"
+      - p: 
+        - str: "Power—without the certainty of less or full—is the space between.
+The struggle to reclaim agency while navigating a world eager to define her. Survivors often
+find that their emotions are explained to them, rather than listened to—that her trauma is
+dissected, resilience assumed, and suffering turned into something for public consumption. To
+push back, to assert her own narrative, can feel like resistance against an invisible force—one
+that demands she be grateful, strong, or fixed. True recovery is not just about survival—it is
+about ownership. Ownership of her emotions, choices, and healing."
+      - img:
+        - src: "./img/power.jpg"
+        - alt: "image description"

@@ -2,26 +2,26 @@ blocks:
   - type: "content"
     content:
       - h1:
-        - str: "Taken from the beginning stages of my research, these were the six words that stood out as being characteristic of people who has been held captive."
+        - str: "Taken from the beginning stages of my research, these were the six words that stood out as being characteristic of people who have been held captive."
       - p: 
-        - str: "Belong"
+
 
   - type: "map"
     content:
       container: "maplibremap"
-      latitude: 40.8075803
-      longitude: -73.9604192
-      zoom: 12
+      latitude: 40.758085
+      longitude: -73.953631
+      zoom: 15
       interactive: true
       mapstyle: "./style.json"
       containerstyle: "width: 100%; height: 70vh"
       layers:
-        - id: "pizza"
-          url: "https://data.cityofnewyork.us/resource/43nn-pn8j.geojson?cuisine_description=Pizza&$limit=10000"
+        - id: "Hospitals"
+          url: "./data/hospitals.geojson"
           data-type: "geojson"
           layer-type: "circle"
           paint:
-            circle-color: "#ff0000"
+            circle-color: "#CE2029"
             circle-radius: 5
           mouseEvent:
             - type: "click"

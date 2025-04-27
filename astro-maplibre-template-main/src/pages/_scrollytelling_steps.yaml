@@ -3,21 +3,20 @@
   zoom: 10
   pitch: 0
   bearing: 0
-  description: Welcome to the map scrollytelling app. You can set position, zoom, pitch, and bearing via the top-level props.
+  description: Through reasearching the effects of being kidnapped and held hostage there were six words that stood out encapsulating much of the traumatic experience. Those words are Helplessness, Autonomy, Belong, Power, Guilt, and Isolation. These words and the diagrams they inspired share so many characteristics including an element of time. The temporal scale has been important in the creation of this project.
 
 - title: Belong
-  center: [-73.96778, 40.78376]
-  zoom: 14
+  center: [ -73.953439, 40.758221]
+  zoom: 12
   pitch: 0
   bearing: 20
-  description: Now we zoom in. A layer is added from a geojson  Layer paint properties are passed, and layers are set to turn off when you continue scrolling via the `persist:false` attribute.
-  
+  description: 
   layers:
   # id of layer
-  - id: 'squirrel-census'
+  - id: 'Hospitals'
   # path to dataset 
   # note anything uploaded in the public/data folder will be uploaded to your site at url/data/file.png
-    url: './data/squirrel20241021.geojson'
+    url: './data/hospitals.geojson'
   # type of symbol
     type: 'circle'
   # type of symbol
@@ -26,26 +25,26 @@
     persist: true
     paint:
       circle-radius: 5
-      circle-color: '#826260'
+      circle-color: '#CE2029'
       circle-opacity: 0.8
 
 - title: Helplessness
-  # center: [-73.96778, 40.78376]
-  center: [-74.00739, 40.67930]
+  center: [ -73.953439, 40.758221]
   zoom: 14
   pitch: 0
   bearing: 20
-  description: Now we zoom to a new location. And add a polygon layer of the innundation zone from Hurricane Sandy via GeoJSON endpoint. Layer paint properties are passed (notice they are different from the syntax for the point layer). 
+  description: 
   layers:
-  - id: 'sandy'
-    url: 'https://data.cityofnewyork.us/resource/5xsi-dfpx.geojson'
-    type: 'fill'
+  - id: 'Hospitals'
+    url: './data/hospitals.geojson'
+    type: 'circle'
     data-type: 'geojson'
-    layer-type: 'fill'
-    persist: false
+    layer-type: 'circle'
+    persist: true
     paint:
-      fill-color: '#c1e2e6'
-      fill-opacity: 0.8
+      circle-radius: 5
+      circle-color: '#CE2029'
+      circle-opacity: 0.8
 
 
 
@@ -54,8 +53,7 @@
   zoom: 8
   pitch: 30
   bearing: -10
-  description: You can change the position of the overlay div using the position attribute, and can add images using the media attribute.
-  media: https://img.atlasobscura.com/OGZXBPY6hP2AXBi-M97MjAYHr46wOlG4iPA1pz2owEI/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85NTI3/NzEyMWY1NWM5ZWIx/ZDRfMTM3ODE0MjA1/OTNfMjQ0ZmUxZDJj/OV9rLmpwZw.jpg
+  description: 
   position: right
 
 - title: Guilt
@@ -63,8 +61,8 @@
   zoom: 8
   pitch: 30
   bearing: -10
-  description: You can change the position of the overlay div using the position attribute, and can add images using the media attribute.
-  media: https://img.atlasobscura.com/OGZXBPY6hP2AXBi-M97MjAYHr46wOlG4iPA1pz2owEI/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85NTI3/NzEyMWY1NWM5ZWIx/ZDRfMTM3ODE0MjA1/OTNfMjQ0ZmUxZDJj/OV9rLmpwZw.jpg
+  description: 
+  media: 
   position: right  
 
 
@@ -73,8 +71,8 @@
   zoom: 8
   pitch: 30
   bearing: -10
-  description: You can change the position of the overlay div using the position attribute, and can add images using the media attribute.
-  media: https://img.atlasobscura.com/OGZXBPY6hP2AXBi-M97MjAYHr46wOlG4iPA1pz2owEI/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85NTI3/NzEyMWY1NWM5ZWIx/ZDRfMTM3ODE0MjA1/OTNfMjQ0ZmUxZDJj/OV9rLmpwZw.jpg
+  description: 
+  media: 
   position: right
 
 - title: Power
@@ -82,6 +80,5 @@
   zoom: 8
   pitch: 30
   bearing: -10
-  description: You can change the position of the overlay div using the position attribute, and can add images using the media attribute.
-  media: https://img.atlasobscura.com/OGZXBPY6hP2AXBi-M97MjAYHr46wOlG4iPA1pz2owEI/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85NTI3/NzEyMWY1NWM5ZWIx/ZDRfMTM3ODE0MjA1/OTNfMjQ0ZmUxZDJj/OV9rLmpwZw.jpg
+  description: 
   position: right

@@ -3,14 +3,14 @@
   zoom: 10
   pitch: 0
   bearing: 0
-  description: Through reasearching the effects of being kidnapped and held hostage there were six words that stood out encapsulating much of the traumatic experience. Those words are Helplessness, Autonomy, Belong, Power, Guilt, and Isolation. These words and the diagrams they inspired share so many characteristics including an element of time. The temporal scale has been important in the creation of this project.
+  description: Hostage survivors face a unique and profound transition when they return to freedom. Their immediate environment plays a critical role in shaping their psychological and emotional recovery. This handbook provides comprehensive architectural and design guidelines for creating Transition Centers, humane, adaptable spaces for survivors to regain autonomy, security, and dignity upon release. This guide is organized around six emotional and psychological pillars, Belong, Guilt, Autonomy, Isolation, Helplessness, and Power. Each section outlines design strategies that governments, municipalities, and architects can implement universally, ensuring culturally sensitive, trauma-informed environments. The recommendations are grounded in interdisciplinary research, including trauma psychology, architecture for well-being, and lessons learned from reintegration practices worldwide
 
 - title: Belong
   center: [ -73.953439, 40.758221]
   zoom: 12
   pitch: 0
   bearing: 20
-  description: 
+  description: Upon returning from captivity, individuals often feel alienated from the very societies they once called home. The first and most critical need is to foster a profound and authentic sense of belonging. Transition Centers must convey, through every architectural element, that the survivor is not merely accommodated but truly welcomed back into a community that values their existence. Belonging must be immediate and visceral—achieved through spatial cues that are culturally resonant, emotionally supportive, and physically comforting.
   layers:
   # id of layer
   - id: 'Hospitals'
@@ -28,12 +28,39 @@
       circle-color: '#CE2029'
       circle-opacity: 0.8
 
-- title: Helplessness
+- title: Design Elements of Belong
+  center: [ -73.953439, 40.758221]
+  zoom: 12
+  pitch: 0
+  bearing: 20
+  description:  Soft Arrival Zones are essential in reducing sensory shock. These spaces should feature gentle lighting, warm textures, and materials such as wood and fabric that communicate care rather than clinical detachment. Cultural Anchors, such as displays of local art and national symbols, serve to affirm the survivor's identity and provide an immediate emotional connection to home without overwhelming the senses. Personal Welcome Rooms allow for the immediate personalization of space through colors, photographs, or other meaningful items, helping counteract feelings of displacement. Family Reconnection Suites should be sound-insulated and furnished to feel like home, ensuring that deeply personal reunions take place in comfort and privacy. Finally, Biophilic Design—the integration of natural elements like greenery, daylight, and flowing water—supports emotional restoration and signals life, growth, and continuity.
+  content: 
+- title: Rendering
+  media: "./img/guilt.jpg"
+  position: full
+
+  layers:
+  - id: 'Hospitals'
+  # path to dataset 
+  # note anything uploaded in the public/data folder will be uploaded to your site at url/data/file.png
+    url: './data/hospitals.geojson'
+  # type of symbol
+    type: 'circle'
+  # type of symbol
+    data-type: 'geojson'
+    layer-type: 'circle'
+    persist: true
+    paint:
+      circle-radius: 5
+      circle-color: '#CE2029'
+      circle-opacity: 0.8
+
+- title: Guilt
   center: [ -73.953439, 40.758221]
   zoom: 14
   pitch: 0
   bearing: 20
-  description: 
+  description: Survivors often grapple with guilt—for having survived, for perceived inadequacies, or for burdens placed on others. Spaces must acknowledge this complexity without reinforcing it. Architects must design environments that provide places for survivors to explore, express, and eventually transform feelings of guilt into self-compassion. The architecture should encourage quiet introspection without pressure, offering a dignified framework for emotional processing.
   layers:
   - id: 'Hospitals'
     url: './data/hospitals.geojson'
@@ -45,40 +72,75 @@
       circle-radius: 5
       circle-color: '#CE2029'
       circle-opacity: 0.8
-
+- title: Design Elements of Guilt
+  center: [ -73.953439, 40.758221]
+  zoom: 14
+  pitch: 0
+  bearing: 20
+  description: Reflection Rooms must be designed as minimalist, quiet zones that validate the need for silent contemplation. These spaces can serve as personal sanctuaries where survivors confront and begin to process complex emotions. Narrative Walls offer writable or digital surfaces for anonymous expression, allowing survivors to externalize thoughts and feelings without direct confrontation. This kind of cathartic release is key in facilitating emotional clarity. Private Support Pods are small, acoustically isolated rooms where survivors can speak with therapists or simply decompress without intrusion. These pods signal confidentiality and emotional safety. Decompression Paths—meandering indoor or outdoor walkways lined with soft landscaping and calming sensory elements—provide survivors with a meditative, physical outlet for emotional tension, linking movement to mental restoration.
+  layers:
 
 
 - title: Autonomy
-  center: [-0.1278, 51.5074]
+  center: [ -73.953439, 40.758221]
   zoom: 8
   pitch: 30
   bearing: -10
-  description: 
+  description: Captivity strips away personal choice, leaving survivors with a fractured sense of agency. Reestablishing autonomy is essential to rebuilding dignity. Architecture must immediately return decision-making power to the survivor, in movement, in interaction, and in engagement with the environment. Transition Centers should be designed to allow and encourage personal choice in how spaces are used, accessed, and modified by their occupants.
   position: right
-
-- title: Guilt
-  center: [-0.1278, 51.5074]
+- title: Design Elements of Autonomy
+  center: [ -73.953439, 40.758221]
   zoom: 8
   pitch: 30
   bearing: -10
-  description: 
+  description: Modular Spaces should feature movable furniture, walls, and adjustable lighting, empowering survivors to arrange their environment based on personal needs and comfort. This reinforces their capacity to make decisions and see direct outcomes. Choice-Driven Layouts use signage and spatial orientation that presents options rather than imposing routes, such as multiple pathways to the same destination, enabling survivors to feel in control of their movements. Self-Service Stations include dining areas, clothing boutiques, and libraries where survivors can freely choose what they need, reinforcing dignity and individual agency. Personal Device Zones offer secure, private access to phones, tablets, or computers, letting survivors control the pace and timing of their reengagement with digital communication and the outside world.
   media: 
   position: right  
 
-
 - title: Isolation
-  center: [-0.1278, 51.5074]
+  center: [ -73.953439, 40.758221]
   zoom: 8
   pitch: 30
   bearing: -10
-  description: 
+  description: After prolonged captivity, survivors may struggle with trust and fear of social re-entry. Spaces must carefully calibrate the balance between offering isolation and encouraging gradual, voluntary social engagement. Architecture must create a continuum of privacy, allowing survivors to set their own pace in reconnecting with others.
+  media: 
+  position: right  
+- title: Design Elements of Isolation
+  center: [ -73.953439, 40.758221]
+  zoom: 8
+  pitch: 30
+  bearing: -10
+  description: Gradient Privacy is a design principle that layers spaces from highly private to fully public, enabling survivors to choose their level of exposure. Private sleeping quarters transition to semi-private lounges, and then to open communal areas. Flexible Room Occupancy means allowing survivors to choose between solitary and shared living arrangements based on their readiness, supporting emotional stability and personal comfort. Controlled Social Nodes are small-scale, gently inviting communal spaces such as reading rooms, art studios, or shared kitchens, designed to promote interaction without forcing it. Quiet Gardens provide shielded outdoor environments that offer restorative natural immersion without the stress of social visibility, enabling solitude with optional presence.
   media: 
   position: right
 
-- title: Power
-  center: [-0.1278, 51.5074]
+- title: Helplessness
+  center: [ -73.953439, 40.758221]
   zoom: 8
   pitch: 30
   bearing: -10
-  description: 
+  description: One of the most pervasive psychological wounds left by captivity is helplessness—the feeling that one's actions have no effect on the world. Transition Centers must counter this by designing spaces where survivors can immediately perceive the consequences of their choices. Interactive, participatory, and skill-rebuilding spaces are crucial in reawakening a sense of personal efficacy.
+  position: right
+- title: Design Elements of Helplessness
+  center: [ -73.953439, 40.758221]
+  zoom: 8
+  pitch: 30
+  bearing: -10
+  description: Transparent Boundaries such as glass walls and open-plan layouts foster visual connection and accountability, making survivors feel both protected and part of a larger, responsive system. Skill Relearning Zones are practical workshops—kitchens, craft studios, or computer labs—where survivors can re-engage in familiar activities, experiencing mastery and progress firsthand. Visible Staff Presence must strike a balance, personnel should be clearly available without being imposing, ensuring that support feels accessible but not controlling. Emergency Calm Rooms are soundproof and self-accessible, giving survivors a tool to regulate their environment and emotional state independently, reinforcing a regained sense of control.
+  position: right
+
+
+- title: Power
+  center: [ -73.953439, 40.758221]
+  zoom: 8
+  pitch: 30
+  bearing: -10
+  description: Beyond healing, survivors must re-enter society not as diminished figures but as empowered individuals. Transition Centers must not simply "ease" survivors into normalcy but should elevate their narratives, offering structured opportunities for agency, leadership, and public engagement. Architecture must offer platforms for expression, ceremony, and societal recognition.
+  position: right
+- title: Design Elements of Power
+  center: [ -73.953439, 40.758221]
+  zoom: 8
+  pitch: 30
+  bearing: -10
+  description: Celebration Halls serve as venues for ceremonies and public milestones, affirming the survivor’s social re-entry and growth. These spaces should be elegant yet human-scaled, inviting without intimidating. Leadership Lounges function as community hubs, equipped with resources and privacy, where survivors can initiate peer support groups, plan events, or contribute to public dialogue. Dynamic Wall Displays use physical or digital media to showcase evolving stories of recovery, art, or activism, affirming survivors' ongoing development. Return-to-Society Gateways—symbolic architectural transitions such as bridges, arches, or tree-lined exits—mark the end of the transition center's space and the beginning of reintegration, reinforcing the survivor's progression with physical symbolism.
   position: right

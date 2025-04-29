@@ -3,7 +3,7 @@ blocks:
     content:
       - h1:
         - str: "Taken from the beginning stages of my research, these were the six words that stood out as being characteristic of people who have been held captive."
-      - p: 
+
 
 
   - type: "map"

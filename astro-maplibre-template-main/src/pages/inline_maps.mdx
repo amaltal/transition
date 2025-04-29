@@ -5,20 +5,20 @@ import { default as MapLibre } from "@components/MapLibre.astro";
 
 /* import all images you would like to use in line here */
 
-import fiskImg from "../assets/img/fisk02.jpg"
-
+import ChibokImg from "../assets/img/Chibok.png"
+import DavidImg from "../assets/img/david.png"
 
 
 <PageLayout title={SITE.title} description={SITE.description}>
 
     <Container>
-    # My Project
+    # These are testimonies of those that have once been held captive
     
-    An example of an interactive map
+    # The Chibok Girls
     <MapLibre
-        container="maplibremap"
-        latitude={51.5074}
-        longitude={-0.1278}
+        container="maplibre_chibok"
+        latitude={12.847118}
+        longitude={10.870600}
         zoom={12}
         interactive="true"
         mapstyle="./style.json"
@@ -42,9 +42,44 @@ import fiskImg from "../assets/img/fisk02.jpg"
         ]}
     />
 
-    ... and a static map. Note that the container ID must be unique.
+The kidnapping of the Chibok girls in 2014 by Boko Haram in Nigeria remains one of the most globally recognized examples of mass hostage-taking, not only for its scale but for the profound emotional and psychological toll it inflicted. For the girls, captivity was marked by the collapse of personal agency, as their identities and choices were forcibly erased by their captors. The experience of being a hostage — sudden disconnection from familiar life, uncertainty about survival, and the struggle to retain a sense of self amid relentless control — mirrors the psychological landscape faced by countless others who have endured forced captivity. The Chibok girls' ordeal highlights how hostages often live suspended between worlds: belonging nowhere, unable to return unchanged to the life they left behind, and burdened with the complexity of reintegration into societies that may not fully grasp the invisible wounds captivity leaves behind.
 
-    <MapLibre
+    <img src={ChibokImg.src} alt="image description" />
+
+    # David P. Jacobsen 
+<MapLibre
+        container="maplibre_beirut_"
+        latitude={33.8938}
+        longitude={35.5018}
+        zoom={12}
+        interactive="true"
+        mapstyle="./style.json"
+        containerstyle="width: 100%; height: 50vh"
+        layers={[
+            { url:'https://data.cityofnewyork.us/resource/43nn-pn8j.geojson?cuisine_description=Pizza&$limit=10000', 'data-type':'geojson','layer-type':'circle', id:'pizza', paint:{'circle-color':'#ff0000','circle-radius':5},
+            mouseEvent: [
+                {
+                    type: "click", // same concept should work for mousemove
+                    content: [
+                        { "h2": [{'str':"Feature Info"}] }, // 
+                        { "p": [{'str':"Description of feature"}] },
+                        { "p": [{'str':'NTA Attribute: '}, {'property': 'dba', 'else':'N/A'}, {'str': " in CD "}, {'property': 'nta', 'else':'N/A'} ]}, 
+                        { "a": [{ "href": "https://example.com", "text": "Learn more about this feature" }] },
+                        { "img": [{ "src": "https://www.seriouseats.com/thmb/-_mziT2tl0F63I4kfji4S6bE-cA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2018__10__20181015-state-of-slice-delmar-clay-williams-2de043fa5a0d4475b6c567e4a974b13b.jpg", "alt": "Feature image" }] }
+                    ]
+                }
+                ]
+            },
+            { url:'https://data.cityofnewyork.us/resource/mzxg-pwib.geojson?$limit=10000', 'data-type':'geojson', 'layer-type':'line', id:'bikes', paint:{'line-color':'#000000', 'line-width':3}},
+        ]}
+    />
+In May 1985, David P. Jacobsen, an American hospital administrator in Beirut, was kidnapped by Hezbollah-linked militants and held captive for 17 months. His experience as a hostage was marked by isolation, physical deprivation, and psychological pressure. Confined in small, often filthy rooms, sometimes blindfolded and shackled, Jacobsen faced constant uncertainty about his fate. He described struggling with feelings of helplessness, anger, and despair, yet also enduring through small routines and personal resolve. His captors provided minimal human interaction and fluctuated between harshness and calculated propaganda efforts. Jacobsen’s reflections reveal how hostage-taking aims to strip individuals of autonomy, but also how internal resilience and the hope of reunion with loved ones become critical to survival. His story underscores the deep psychological scars captivity can inflict, even after freedom is regained.
+    <img src={DavidImg.src} alt="image description" />
+
+    ### A further subsection
+    And even more detail here.
+    static map
+<MapLibre
         container="maplibremap2"
         latitude={32.795595}
         longitude={-117.259191}
@@ -53,21 +88,6 @@ import fiskImg from "../assets/img/fisk02.jpg"
         mapstyle="https://demotiles.maplibre.org/style.json"
         containerstyle="width: 100%; height: 256px"
     />
-
-
-    ... and a static map from an image you have composed 
-
-    /* To add static images from a jpg or png file use the syntax below*/
-    /* you must include the reference name that corresponds to the file path you have listed above */
-    <img src={fiskImg.src} alt="image description" />
-
-    ## A subsection 
-
-    You can go into more detail here.
-
-    ### A further subsection
-    And even more detail here.
-
     </Container>
 
 </PageLayout>

@@ -6,8 +6,8 @@
   layer-type: 'line'
   url: 'https://data.cityofnewyork.us/resource/mzxg-pwib.geojson?$limit=10000'
   paint:
-    line-color: '#000000'
-    line-width: 3
+    line-color: '#ED9121'
+    line-width: 1
 
 - id: 'Subway Stations'
   label: 'Subway Stations'
@@ -16,6 +16,10 @@
   data-type: 'geojson'
   layer-type: 'circle'
   url: './data/subway.geojson'
+  paint:
+      circle-radius: 5
+      circle-color: '#FF8C00'
+      circle-opacity: 0.8
 
 
 - id: 'Hospitals'
@@ -38,27 +42,18 @@
   layer-type: 'fill'
   url: './data/parks.geojson'
   paint:
-      fill-color: '#CE2029'
+      fill-color: '#FBCEB1'
       fill-opacity: 0.8
 
-- id: 'pizza'
-  label: 'Pizza Places'
-  toggle: true
-  visible: true
+
+- id: 'streets'
+  label: 'Major Streets'
+  toggle: true  
+  visible: false
   data-type: 'geojson'
-  layer-type: 'circle'
-  url: 'https://data.cityofnewyork.us/resource/43nn-pn8j.geojson?cuisine_description=Pizza&$limit=10000'
+  layer-type: 'line'
+  url: './data/streets.geojson'
   paint:
-    circle-color: '#ff0000'
-    circle-radius: 5
-  mouseEvent:
-    - type: "click"
-      content:
-        - h1:
-            - str: "Feature Info"
-        - p:
-            - str: "Description"
-        - p:
-            - str: "Name: "
-            - property: "dba"
-              else: "N/A"
+    line-color: '#FF8C00'
+    line-width: 3
+
